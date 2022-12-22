@@ -11,9 +11,9 @@ for (let i = 1; i <= 10; i++) {
 }
 
 // console.log() pour afficher un message dans l'inspecteur.
-console.log("Bonjour tout le monde!")
-console.log(3+4)
-console.log(nom)
+console.log("Bonjour tout le monde!");
+console.log(3+4);
+console.log(nom);
 
 /* 
 Initialisation des variables firstName et lastName.
@@ -21,22 +21,22 @@ dans la variable name, on ajoute les deux variables précédentes.
 */
 let firstName = 'John';
 let lastName = 'Doe';
-let name = `${firstName} ${lastName}`
-console.log(name)
+let name = `${firstName} ${lastName}`;
+console.log(name);
 
 // Initialisation de la variable age.
-let age = 27
+let age = 27;
 /* Si l'age est supérieur à 18, le message "vous êtes majeur" s'affiche.
 Sinon, c'est le message "vous êtes mineur" qui s'affiche.
 */
-if (age > 18) {
-    console.log('Vous êtes majeur')
+if (age >= 18) {
+    console.log('Vous êtes majeur');
 } else {
-    console.log('Vous êtes mineur')
+    console.log('Vous êtes mineur');
 }
 
 // Création du tableau couleur
-let couleurs = ["rouge", "vert", "bleu", "jaune", "orange"]
+let couleurs = ["rouge", "vert", "bleu", "jaune", "orange"];
 /*
 la boucle commence à 0 (i=0)
 à chaque tour, on ajoute 1 à i.
@@ -44,9 +44,8 @@ la boucle se termine à la fin du tableau.
 à chaque tour, on affiche la couleur à l'index indiqué par i
 */
 for (let i = 0; i < couleurs.length; i++) {
-    console.log(couleurs[i])
-    
-}
+    console.log(couleurs[i]);
+};
 
 //Création du tableau numbers
 let numbers = [1, 2, 3, 4, 5];
@@ -64,14 +63,14 @@ La fonction prend en paramètre a
 Si a modulo 2 = 0 alors la fonction affiche pair
 Sinon, elle affiche impair
 */
-function pair (a){
-    if (a % 2 === 0) {
-        console.log("pair")
+function isPair (number){
+    if (number % 2 === 0) {
+        return true;
     }else {
-        console.log("impair")
+        return false;
     }
 }
-pair(965)
+console.log(isPair(965));
 
 /*
 la fonction somme prend en paramètre a
@@ -80,14 +79,14 @@ pour chaque index du tableau, la fonction ajoutera à somme le nombre qui se tro
 elle affiche enfin le résultat de l'addition.
 */
 function somme (a) {
-    let sum = 0
+    let result = 0;
     for (let i = 0; i < a.length; i++) {
-        sum += a[i]        
+        result += a[i]        
     }
-    console.log(sum)
+    return result;
 }
 
-somme(numbers)
+console.log(somme([1, 5, 6]));
 
 /*
 la fonction prend en paramètre a
