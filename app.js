@@ -102,7 +102,7 @@ function inverse (a) {
 
     let join = reverse.join("")
 
-    console.log(join)
+    return join
 }
 
-inverse('hello world')
+console.log(inverse('hello world'));
